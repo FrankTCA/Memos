@@ -6,8 +6,8 @@ if (!isset($_SESSION['gist_user_id'])) {
     die("Unauthorized!");
 }
 
-if (!(isset($_POST["name"]) && isset($_POST["title"]) && isset($_POST["url"]))) {
-    die("Not enough information recieved!");
+if (!isset($_POST["name"]) || !isset($_POST["title"]) || !isset($_POST["url"])) {
+    die("Not enough information received!");
 }
 
 $name = $_POST['name'];
