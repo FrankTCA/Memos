@@ -31,6 +31,7 @@ $(document).ready(function() {
         }
 
         console.log(data);
+        console.log(url);
 
         $.post("php/action_mkmemo.php", data, function(data, status) {
             if (data.endsWith("success")) {
