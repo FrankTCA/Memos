@@ -9,7 +9,7 @@ class Creds {
     private $host = "127.0.0.1";
     private $username = "root";
     private $password = "password";
-    private $database = "gists";
+    private $database = "memos";
 
     private $development = false;
 
