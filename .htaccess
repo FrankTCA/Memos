@@ -7,6 +7,9 @@
 <FilesMatch README.md>
     Require all denied
 </FilesMatch>
+<FilesMatch .git>
+    Require all denied
+</FilesMatch>
 
 RewriteEngine on
 RewriteRule ^([A-Za-z\d]+)$ "https://infotoast.org/memos/?link=$1" [R,L]
