@@ -30,6 +30,8 @@ $(document).ready(function() {
             url: url
         }
 
+        console.log(data);
+
         $.post("php/action_mkmemo.php", data, function(data, status) {
             if (data.endsWith("success")) {
                 prompt("Memo created successfully and is available at https://infotoast.org/memos/" + name);
