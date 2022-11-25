@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('#frmSubmitBtn').click(function() {
         let name = $('#frmNameBox').val();
         let title = $('#frmTitleBox').val();
-        let url = $('#gistUrlBox').val();
+        let url = $('#frmUrlBox').val();
 
         var data;
 
@@ -18,6 +18,8 @@ $(document).ready(function() {
             $("#frmTitleWarning").show();
             return;
         }
+
+        console.log(url);
 
         if (/https:\/\/gist\.github\.com\/[A-Za-z]+\/[A-Za-z0-9]+/.test(url)) {
             $("#frmUrlWarning").show();
