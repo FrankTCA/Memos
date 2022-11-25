@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="resources/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/registration.js"></script>
+    <link rel="stylesheet" href="resources/global.css">
+    <title>Register</title>
+    <meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+    <div class="container" id="success">
+      <h1 class="center">Info Toast Memos</h1>
+      <p class="center">Your registration was successful, but must be approved by an admin.</p>
+      <p class="center">Please contact Frank on Discord or email frank@infotoast.org to expedite the process, as he will not be notified otherwise!</p>
+      <p class="center">Once you account is approved, you can log in at <a href="login.html">https://infotoast.org/assign/login.html</a></p>
+      <p class="center">Make sure he knows the username you registered with.</p>
+      <p class="center">Your password cannot be changed, and we cannot recover it if you lose it.</p>
+      <p class="center">If you lose your password, Frank can reset it for you!</p>
+    </div>
+    <div class="container" id="register">
+      <h1 class="center">Register for Info Toast Memos</h1>
+      <p class="center">Memos is a platform that allows you to create easy-to-access webpages with github gist</p>
+      <p class="center">It includes the ability to see a log of who accessed the memos, so you can know if the people you sent it to did access it.</p>
+      <p class="center">Accounts currently must be approved by an admin, so please contact Frank after registering to log in.</p>
+      <hr>
+      <h3>Please register below:</h3>
+      <form>
+        <span class="formInfo">Username: </span><input type="text" name="un" id="un" placeholder="Your Name..."><span class="invalidWarning" id="unwarning">Username cannot be more than 8 characters!</span><br>
+        <span class="formInfo">Password: </span><input type="password" name="pw" id="pw" placeholder="Password..."><span class="invalidWarning" id="pwarning">Password not strong enough!</span><br>
+        <span class="formInfo">Confirm Password: </span><input type="password" name="cpw" id="cpw" placeholder="Confirm Password..."><span class="invalidWarning" id="cpwarning">Password does not match!</span><br>
+        <button onclick="onSubmit()" type="button" class="nullsubmitbtn" id="registrationSubmitBtn">Submit</button>
+      </form>
+      <p id="status">You shouldn't see this!</p>
+    </div>
+</body>
+</html>

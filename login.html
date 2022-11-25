@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <script type="text/javascript" src="resources/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/login.js"></script>
+    <link rel="stylesheet" href="resources/global.css">
+    <meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+<div class="container" id="login">
+  <h1 class="center">Welcome to Info Toast Memos!</h1>
+  <p class="center">Memos is a platform that allows you to create easy-to-access webpages with github gist</p>
+  <p class="center">It includes the ability to see a log of who accessed the memos, so you can know if the people you sent it to did access it.</p>
+  <p class="center">If you haven't registered yet, please do so at <a href="register.html">https://infotoast.org/memos/register.html</a></p>
+  <hr>
+  <h3>Please log in below:</h3>
+  <form>
+    <span class="formInfo">Username: </span><input type="text" name="un" id="un" placeholer="Username..."><br>
+    <span class="formInfo">Password: </span><input type="password" name="pw" id="pw" placeholder="Password..."><br>
+    <button onClick="onSubmit()" type="button" class="nullsubmitbtn" id="loginSubmitBtn">Log In</button>
+  </form>
+  <p id="status">You shouldn't see this!</p>
+</div>
+</body>
+</html>
