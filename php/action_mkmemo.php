@@ -2,7 +2,7 @@
 session_start();
 require "creds.php";
 
-if (!isset($_SESSION['user_id'])) {
+if (!isset($_SESSION['gist_user_id'])) {
     die("Unauthorized!");
 }
 
